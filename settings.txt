@@ -1,0 +1,41 @@
+Django settings
+
+
+pip3 install Django
+
+django-admin startproject admin .
+
+python manage.py [command] - runserver -> yurutib beradi
+
+python manage.py startapp backend
+
+admin/settings ->  INSTALLED_APPS [ + backend.apps.BackendConfig ]
+
+
+Models:
+    UserModel
+      - id
+      - user_id - 102378819
+      - name
+      - user_type
+
+backend.admin.py - admin.site.register(UserModel)
+
+python manage.py makemigrations
+python manage.py migrate
+
+python manage.py createsuperuser
+    username: admin
+    email: {}
+    pass1/pass2 - [1234] /y
+
+
+utils/db_api/database.py -> Django models && Bot
+
+
+
+
+python manage.py runserver
+admin
+
+
